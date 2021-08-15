@@ -20,11 +20,10 @@ from album_project import views as album_project_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path('', album_project_views.album_list, name ='albums'),
+    path('', album_project_views.list_albums, name ='list_albums'),
     path('albums/new', album_project_views.add_album, name ='add_album'),
     path('albums/<int:pk>/delete', album_project_views.delete_album, name ='delete_album'),
     path('albums/<int:pk>/edit', album_project_views.edit_album, name ='edit_album'),
-    # path('albums/<int:pk>', album_project_views.album_detail, name ='album_details'),
     
 
 ]

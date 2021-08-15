@@ -13,9 +13,9 @@ class AlbumsForm(forms.ModelForm):
             'photo',
         ]
 
-class TracksForm(forms.ModelForm):
-    class Meta:
-        model = Tracks
-        fields = [
+# class TracksForm(forms.ModelForm):
+#     class Meta:
+#         model = Tracks
+#         fields = [
             
-        ]
+#         ]

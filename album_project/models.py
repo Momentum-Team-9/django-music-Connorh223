@@ -18,8 +18,8 @@ class Tracks(models.Model):
     albums = models.ForeignKey(
         Albums, 
         on_delete=models.CASCADE,
-        related_name='tracks'
+        related_name="tracks"
     )
     def __str__(self):
-        return f"{self.name}"
+        return f"{self.name}, {self.albums}"
 
