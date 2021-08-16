@@ -1,6 +1,30 @@
-<!-- Trying to make this as simple as possible because this seems 
-  to be where my error originates from! -->
+{% extends "base.html" %} {% block content %}
 
-<div>
-  <h1>HEADER</h1>
-</div>
+  <!-- W3 Schools Template Start -->
+  <header class="w3-display-container w3-content w3-center" style="max-width:1500px">
+    <img class="w3-image" src="https://media.istockphoto.com/photos/young-women-with-shopping-bags-standing-on-the-street-picture-id1148923865?k=6&m=1148923865&s=612x612&w=0&h=267PQmP_uqcDxKuQ4R211lj8DrYnFp374buf_qnZLeg=" alt="Me" width="1500" height="600">
+    <!-- //Text box -->
+    <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-light-grey w3-center">
+      <div class="title-box">
+          <h1 class="f3 f2-m f1-l fw2 white-140 mv3">Notes!</h1>
+      </div>
+          <form id="notes-form" class="pv4">
+            <div class="form-field">
+              <input id="notes-text" class="pa3 w-100 measure" type="text" placeholder="Enter your note item here" required>
+              <input id="notes-title" class="pa3 w-100 measure" type="text" placeholder="Enter your note title here" required>
+            </div>
+            <div class="form-field">
+              <!-- //submit button -->
+              <button id="save-note" type="submit" class="mt3 f6 ph3 pv2 mb2 dib white bg-dark-blue">Save Note</button>
+            </div>
+          </form>
+          <!-- //outputted notes -->
+          <section id="notes" class="pa3">
+            <ul id="notes-list" class="list pl0 measure"></ul>
+          </section>
+        </div>
+        
+  
+
+  </div>
+  <!-- W3 Schools Template End -->
